@@ -1,4 +1,7 @@
+
+
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -13,162 +16,181 @@
       padding-bottom: 40px;
     }
 
-    .header {
-      background: linear-gradient(135deg, #1a3a0a 0%, #2D5016 50%, #4A7C2F 100%);
-      padding: 28px 20px 20px;
-      color: #fff;
-    }
-    .header-sub { font-size: 10px; letter-spacing: 4px; opacity: 0.6; margin-bottom: 4px; }
-    .header-title { font-size: 24px; font-weight: 900; letter-spacing: 1px; }
-    .header-desc { font-size: 12px; opacity: 0.75; margin-top: 4px; }
-    .risk-summary { display: flex; gap: 8px; margin-top: 14px; }
-    .risk-summary-item {
-      background: rgba(255,255,255,0.15);
-      border-radius: 8px; padding: 6px 10px;
-      text-align: center; flex: 1;
-    }
-    .risk-summary-count { font-size: 18px; font-weight: 800; }
-    .risk-summary-label { font-size: 10px; opacity: 0.8; }
+```
+.header {
+  background: linear-gradient(135deg, #1a3a0a 0%, #2D5016 50%, #4A7C2F 100%);
+  padding: 28px 20px 20px;
+  color: #fff;
+}
+.header-sub { font-size: 10px; letter-spacing: 4px; opacity: 0.6; margin-bottom: 4px; }
+.header-title { font-size: 24px; font-weight: 900; letter-spacing: 1px; }
+.header-desc { font-size: 12px; opacity: 0.75; margin-top: 4px; }
+.risk-summary { display: flex; gap: 8px; margin-top: 14px; }
+.risk-summary-item {
+  background: rgba(255,255,255,0.15);
+  border-radius: 8px; padding: 6px 10px;
+  text-align: center; flex: 1;
+}
+.risk-summary-count { font-size: 18px; font-weight: 800; }
+.risk-summary-label { font-size: 10px; opacity: 0.8; }
 
-    .filter-area { padding: 14px 14px 0; }
-    #searchInput {
-      width: 100%; padding: 10px 14px;
-      border-radius: 10px; border: 1.5px solid #D0C9BB;
-      font-size: 14px; background: #fff;
-      outline: none; margin-bottom: 10px; font-family: inherit;
-    }
-    .filter-label { font-size: 11px; color: #888; margin-bottom: 5px; font-weight: 700; }
-    .filter-buttons { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
-    .filter-btn {
-      padding: 5px 12px; border-radius: 20px;
-      border: 1.5px solid #D0C9BB; background: #fff;
-      color: #666; font-size: 11px; font-weight: 700;
-      cursor: pointer; transition: all 0.15s; font-family: inherit;
-    }
-    .result-count { font-size: 12px; color: #888; margin-bottom: 8px; font-weight: 600; }
+.filter-area { padding: 14px 14px 0; }
+#searchInput {
+  width: 100%; padding: 10px 14px;
+  border-radius: 10px; border: 1.5px solid #D0C9BB;
+  font-size: 14px; background: #fff;
+  outline: none; margin-bottom: 10px; font-family: inherit;
+}
+.filter-label { font-size: 11px; color: #888; margin-bottom: 5px; font-weight: 700; }
+.filter-buttons { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+.filter-btn {
+  padding: 5px 12px; border-radius: 20px;
+  border: 1.5px solid #D0C9BB; background: #fff;
+  color: #666; font-size: 11px; font-weight: 700;
+  cursor: pointer; transition: all 0.15s; font-family: inherit;
+}
+.result-count { font-size: 12px; color: #888; margin-bottom: 8px; font-weight: 600; }
 
-    /* 種別フィルター */
-    .type-filter { display: flex; gap: 6px; margin-bottom: 10px; }
-    .type-btn {
-      flex: 1; padding: 7px 4px; border-radius: 8px;
-      border: 1.5px solid #D0C9BB; background: #fff;
-      font-size: 11px; font-weight: 700; cursor: pointer;
-      font-family: inherit; color: #666; transition: all 0.15s;
-      text-align: center;
-    }
-    .type-btn.active-all   { background: #4A7C2F; color: #fff; border-color: #4A7C2F; }
-    .type-btn.active-add   { background: #3B5998; color: #fff; border-color: #3B5998; }
-    .type-btn.active-food  { background: #8B4513; color: #fff; border-color: #8B4513; }
+/* 種別フィルター */
+.type-filter { display: flex; gap: 6px; margin-bottom: 10px; }
+.type-btn {
+  flex: 1; padding: 7px 4px; border-radius: 8px;
+  border: 1.5px solid #D0C9BB; background: #fff;
+  font-size: 11px; font-weight: 700; cursor: pointer;
+  font-family: inherit; color: #666; transition: all 0.15s;
+  text-align: center;
+}
+.type-btn.active-all   { background: #4A7C2F; color: #fff; border-color: #4A7C2F; }
+.type-btn.active-add   { background: #3B5998; color: #fff; border-color: #3B5998; }
+.type-btn.active-food  { background: #8B4513; color: #fff; border-color: #8B4513; }
 
-    .card-list { padding: 0 14px; }
-    .card {
-      background: #fff; border-radius: 12px;
-      margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-      border: 1.5px solid transparent;
-      cursor: pointer; transition: all 0.2s; overflow: hidden;
-    }
-    .card.open { box-shadow: 0 4px 16px rgba(0,0,0,0.10); border-color: #4A7C2F; }
-    .card-header { padding: 12px 12px 0; display: flex; align-items: center; gap: 10px; }
-    .risk-badge {
-      min-width: 38px; height: 38px; border-radius: 8px;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      font-size: 8px; font-weight: 800; line-height: 1.3;
-      color: #fff; flex-shrink: 0;
-    }
-    .risk-badge-level { font-size: 10px; }
-    .card-info { flex: 1; min-width: 0; }
-    .card-name { font-weight: 700; font-size: 13px; color: #222; margin-bottom: 2px; line-height: 1.3; }
+.card-list { padding: 0 14px; }
+.card {
+  background: #fff; border-radius: 12px;
+  margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border: 1.5px solid transparent;
+  cursor: pointer; transition: all 0.2s; overflow: hidden;
+}
+.card.open { box-shadow: 0 4px 16px rgba(0,0,0,0.10); border-color: #4A7C2F; }
+.card-header { padding: 12px 12px 0; display: flex; align-items: center; gap: 10px; }
+.risk-badge {
+  min-width: 38px; height: 38px; border-radius: 8px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  font-size: 8px; font-weight: 800; line-height: 1.3;
+  color: #fff; flex-shrink: 0;
+}
+.risk-badge-level { font-size: 10px; }
+.card-info { flex: 1; min-width: 0; }
+.card-name { font-weight: 700; font-size: 13px; color: #222; margin-bottom: 2px; line-height: 1.3; }
 
-    /* 種別バッジ */
-    .type-tag {
-      display: inline-block; font-size: 9px; font-weight: 800;
-      padding: 2px 7px; border-radius: 10px; margin-right: 4px;
-      vertical-align: middle; letter-spacing: 0.5px;
-    }
-    .type-tag-additive { background: #EBF0FF; color: #3B5998; }
-    .type-tag-food     { background: #FFF0E0; color: #8B4513; }
+/* 種別バッジ */
+.type-tag {
+  display: inline-block; font-size: 9px; font-weight: 800;
+  padding: 2px 7px; border-radius: 10px; margin-right: 4px;
+  vertical-align: middle; letter-spacing: 0.5px;
+}
+.type-tag-additive { background: #EBF0FF; color: #3B5998; }
+.type-tag-food     { background: #FFF0E0; color: #8B4513; }
 
-    .card-category { font-size: 10px; color: #999; margin-top: 1px; }
-    /* ① 開閉ボタン */
-    .card-toggle {
-      display: flex; align-items: center; gap: 5px;
-      flex-shrink: 0;
-    }
-    .toggle-btn {
-      background: #F0F4FF; border: 1.5px solid #B8C8F0;
-      color: #3B5998; border-radius: 20px;
-      font-size: 10px; font-weight: 800; padding: 4px 10px;
-      cursor: pointer; font-family: inherit;
-      white-space: nowrap; transition: all 0.15s;
-      display: flex; align-items: center; gap: 4px;
-    }
-    .card.is-food .toggle-btn {
-      background: #FFF0E0; border-color: #E8B87A; color: #8B4513;
-    }
-    .card.open .toggle-btn {
-      background: #4A7C2F; border-color: #4A7C2F; color: #fff;
-    }
-    .toggle-arrow { font-size: 10px; transition: transform 0.2s; }
-    .card.open .toggle-arrow { transform: rotate(180deg); }
+.card-category { font-size: 10px; color: #999; margin-top: 1px; }
+/* ① 開閉ボタン */
+.card-toggle {
+  display: flex; align-items: center; gap: 5px;
+  flex-shrink: 0;
+}
+.toggle-btn {
+  background: #F0F4FF; border: 1.5px solid #B8C8F0;
+  color: #3B5998; border-radius: 20px;
+  font-size: 10px; font-weight: 800; padding: 4px 10px;
+  cursor: pointer; font-family: inherit;
+  white-space: nowrap; transition: all 0.15s;
+  display: flex; align-items: center; gap: 4px;
+}
+.card.is-food .toggle-btn {
+  background: #FFF0E0; border-color: #E8B87A; color: #8B4513;
+}
+.card.open .toggle-btn {
+  background: #4A7C2F; border-color: #4A7C2F; color: #fff;
+}
+.toggle-arrow { font-size: 10px; transition: transform 0.2s; }
+.card.open .toggle-arrow { transform: rotate(180deg); }
 
-    .card-uses { padding: 8px 12px 10px; }
-    .uses-label { font-size: 10px; color: #aaa; margin-bottom: 3px; }
-    .uses-content {
-      font-size: 11px; color: #555;
-      background: #F7F4EE; border-radius: 6px;
-      padding: 5px 8px; line-height: 1.5;
-    }
+.card-uses { padding: 8px 12px 10px; }
+.uses-label { font-size: 10px; color: #aaa; margin-bottom: 3px; }
+.uses-content {
+  font-size: 11px; color: #555;
+  background: #F7F4EE; border-radius: 6px;
+  padding: 5px 8px; line-height: 1.5;
+}
 
-    /* ② タップ案内バナー */
-    .tap-hint {
-      margin: 0 14px 10px;
-      background: #FFFBEA; border: 1.5px solid #F6D860;
-      border-radius: 10px; padding: 9px 12px;
-      font-size: 11px; color: #7A5C00;
-      display: flex; align-items: center; gap: 8px;
-    }
-    .tap-hint-icon { font-size: 18px; flex-shrink: 0; }
-    .card-detail {
-      margin: 0 12px 12px; background: #FFF8F0;
-      border-radius: 8px; padding: 10px 12px; display: none;
-    }
-    .card.open .card-detail { display: block; }
-    .detail-label { font-size: 10px; font-weight: 800; margin-bottom: 5px; }
-    .detail-text { font-size: 12px; color: #444; line-height: 1.7; }
+/* ② タップ案内バナー */
+.tap-hint {
+  margin: 0 14px 10px;
+  background: #FFFBEA; border: 1.5px solid #F6D860;
+  border-radius: 10px; padding: 9px 12px;
+  font-size: 11px; color: #7A5C00;
+  display: flex; align-items: center; gap: 8px;
+}
+.tap-hint-icon { font-size: 18px; flex-shrink: 0; }
+.card-detail {
+  margin: 0 12px 12px; background: #FFF8F0;
+  border-radius: 8px; padding: 10px 12px; display: none;
+}
+.card.open .card-detail { display: block; }
+.detail-label { font-size: 10px; font-weight: 800; margin-bottom: 5px; }
+.detail-text { font-size: 12px; color: #444; line-height: 1.7; }
 
-    /* 食品原材料カードの左ボーダー色 */
-    .card.is-food { border-left: 3px solid #C8813A; }
-    .card.is-food.open { border-color: #C8813A; }
+/* 食品原材料カードの左ボーダー色 */
+.card.is-food { border-left: 3px solid #C8813A; }
+.card.is-food.open { border-color: #C8813A; }
 
-    .note {
-      margin: 14px 14px 0; padding: 12px 14px;
-      background: #EAF0E5; border-radius: 10px;
-      font-size: 11px; color: #5A7A4A; line-height: 1.6;
-    }
+.note {
+  margin: 14px 14px 0; padding: 12px 14px;
+  background: #EAF0E5; border-radius: 10px;
+  font-size: 11px; color: #5A7A4A; line-height: 1.6;
+}
 
-    /* ④ 出典エリア */
-    .sources {
-      margin: 10px 14px 0; padding: 12px 14px;
-      background: #F0F0F0; border-radius: 10px;
-      font-size: 11px; color: #555; line-height: 1.8;
-    }
-    .sources-title {
-      font-size: 12px; font-weight: 800; color: #333;
-      margin-bottom: 6px;
-    }
-    .sources a { color: #3B5998; text-decoration: none; }
-    .sources a:hover { text-decoration: underline; }
-    .no-result { text-align: center; padding: 40px; color: #bbb; font-size: 14px; }
+/* ④ 出典エリア */
+.sources {
+  margin: 10px 14px 0; padding: 12px 14px;
+  background: #F0F0F0; border-radius: 10px;
+  font-size: 11px; color: #555; line-height: 1.8;
+}
+.sources-title {
+  font-size: 12px; font-weight: 800; color: #333;
+  margin-bottom: 6px;
+}
+.sources a { color: #3B5998; text-decoration: none; }
+.sources a:hover { text-decoration: underline; }
+.no-result { text-align: center; padding: 40px; color: #bbb; font-size: 14px; }
 
-    /* 凡例 */
-    .legend {
-      display: flex; gap: 12px; flex-wrap: wrap;
-      background: #fff; border-radius: 10px; padding: 10px 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-    }
-    .legend-item { display: flex; align-items: flex-start; gap: 7px; font-size: 11px; color: #555; flex: 1; min-width: 130px; }
-    .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; }
+/* 凡例 */
+.legend {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  background: #fff; border-radius: 10px; padding: 10px 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.legend-item { display: flex; align-items: flex-start; gap: 7px; font-size: 11px; color: #555; flex: 1; min-width: 130px; }
+.legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; }
+
+/* グループヘッダー */
+.group-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px 6px;
+  margin: 8px 0 4px;
+  border-radius: 10px;
+  font-size: 13px; font-weight: 800;
+}
+.group-header-add { background: #EBF0FF; color: #3B5998; border-left: 4px solid #3B5998; }
+.group-header-food { background: #FFF0E0; color: #8B4513; border-left: 4px solid #C8813A; }
+.group-count {
+  font-size: 11px; font-weight: 700;
+  padding: 2px 8px; border-radius: 10px;
+  background: rgba(0,0,0,0.08);
+}
+```
+
   </style>
 </head>
 <body>
@@ -201,6 +223,7 @@
   <input type="text" id="searchInput" placeholder="🔍 成分名・食品名・カテゴリで検索...">
 
   <!-- ③ 凡例（検索窓直下に移動） -->
+
   <div class="legend" style="margin:0 0 10px 0;">
     <div class="legend-item">
       <div class="legend-dot" style="background:#3B5998"></div>
@@ -219,6 +242,7 @@
   </div>
 
   <!-- 種別フィルター -->
+
   <div class="filter-label">表示する種別</div>
   <div class="type-filter">
     <button class="type-btn active-all" id="typeAll" onclick="setType('all')">すべて</button>
@@ -240,8 +264,6 @@
   <div class="result-count" id="resultCount"></div>
 </div>
 
-
-
 <div class="card-list" id="cardList"></div>
 
 <div class="note">
@@ -249,6 +271,7 @@
 </div>
 
 <!-- ④ 出典 -->
+
 <div class="sources">
   <div class="sources-title">📚 参考・出典</div>
   <ul style="padding-left:16px;margin:0;">
@@ -930,6 +953,11 @@ let openId = null;
 let currentPage = 1;
 const PAGE_SIZE = 30;
 
+// カテゴリを単一カテゴリに分割（「A・B」→「A」「B」両方に登録）
+function splitCategories(item) {
+  return item.category.split(/[・\/]/).map(c => c.trim()).filter(c => c.length > 0);
+}
+
 // 日本語あいうえお順ソート
 function sortJa(arr) {
   return [...arr].sort((a, b) => a.localeCompare(b, 'ja'));
@@ -988,11 +1016,14 @@ function toggleCategoryPanel() {
   icon.textContent    = catPanelOpen ? "閉じる ▲" : "開く ▼";
 }
 
-// カテゴリボタン生成（あいうえお順）
+// カテゴリボタン生成（分割・あいうえお順）
 function rebuildCategoryButtons() {
   const typeFiltered = currentType === "all" ? items : items.filter(a => a.type === currentType);
-  const catSet = [...new Set(typeFiltered.map(a => a.category))];
-  const sortedCats = sortJa(catSet);
+
+  // 全カテゴリを分割して収集
+  const catSet = new Set();
+  typeFiltered.forEach(a => splitCategories(a).forEach(c => catSet.add(c)));
+  const sortedCats = sortJa([...catSet]);
   const cats = ["すべて", ...sortedCats];
   if (!cats.includes(currentCat)) currentCat = "すべて";
 
@@ -1035,7 +1066,6 @@ function renderPagination(totalItems, container) {
   const wrapper = document.createElement("div");
   wrapper.style.cssText = "display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:14px 0;";
 
-  // 前へ
   if (currentPage > 1) {
     const prev = document.createElement("button");
     prev.textContent = "◀ 前へ";
@@ -1044,7 +1074,6 @@ function renderPagination(totalItems, container) {
     wrapper.appendChild(prev);
   }
 
-  // ページ番号ボタン（最大7個表示）
   let startPage = Math.max(1, currentPage - 3);
   let endPage   = Math.min(totalPages, startPage + 6);
   if (endPage - startPage < 6) startPage = Math.max(1, endPage - 6);
@@ -1060,7 +1089,6 @@ function renderPagination(totalItems, container) {
     wrapper.appendChild(btn);
   }
 
-  // 次へ
   if (currentPage < totalPages) {
     const next = document.createElement("button");
     next.textContent = "次へ ▶";
@@ -1069,7 +1097,6 @@ function renderPagination(totalItems, container) {
     wrapper.appendChild(next);
   }
 
-  // ページ情報
   const info = document.createElement("div");
   info.style.cssText = "width:100%;text-align:center;font-size:11px;color:#888;margin-top:4px;";
   info.textContent = `${currentPage} / ${totalPages} ページ（全${totalItems}件）`;
@@ -1079,11 +1106,11 @@ function renderPagination(totalItems, container) {
 }
 
 function render() {
-  // フィルタリング
+  // フィルタリング（カテゴリは分割して照合）
   const filtered = items.filter(a => {
     const matchType   = currentType === "all" || a.type === currentType;
     const matchRisk   = currentRisk === "すべて" || a.risk === currentRisk;
-    const matchCat    = currentCat  === "すべて" || a.category === currentCat;
+    const matchCat    = currentCat === "すべて" || splitCategories(a).includes(currentCat);
     const matchSearch = !currentSearch ||
       a.name.includes(currentSearch) ||
       a.uses.includes(currentSearch) ||
@@ -1091,18 +1118,20 @@ function render() {
     return matchType && matchRisk && matchCat && matchSearch;
   });
 
-  // あいうえお順ソート
-  const sorted = [...filtered].sort((a, b) => a.name.localeCompare(b.name, 'ja'));
+  // あいうえお順ソート・グループ分け
+  const addItems  = [...filtered.filter(a => a.type === "additive")].sort((a,b) => a.name.localeCompare(b.name,'ja'));
+  const foodItems = [...filtered.filter(a => a.type === "food")].sort((a,b) => a.name.localeCompare(b.name,'ja'));
+  const sorted = [...addItems, ...foodItems];
 
   // ページング
-  const totalItems = sorted.length;
-  const totalPages = Math.ceil(totalItems / PAGE_SIZE);
-  if (currentPage > totalPages) currentPage = 1;
+  const totalItems  = sorted.length;
+  const totalPages  = Math.ceil(totalItems / PAGE_SIZE);
+  if (currentPage > totalPages && totalPages > 0) currentPage = 1;
   const startIdx = (currentPage - 1) * PAGE_SIZE;
-  const paged = sorted.slice(startIdx, startIdx + PAGE_SIZE);
+  const paged    = sorted.slice(startIdx, startIdx + PAGE_SIZE);
 
   document.getElementById("resultCount").textContent =
-    `${totalItems}件 表示中（全${items.length}種）　${startIdx + 1}〜${Math.min(startIdx + PAGE_SIZE, totalItems)}件目`;
+    `${totalItems}件 表示中（全${items.length}種）　${Math.min(startIdx+1,totalItems)}〜${Math.min(startIdx+PAGE_SIZE,totalItems)}件目`;
 
   const list = document.getElementById("cardList");
   list.innerHTML = "";
@@ -1117,18 +1146,30 @@ function render() {
   list.appendChild(paginationTop);
   renderPagination(totalItems, paginationTop);
 
-  // カード表示
+  // グループヘッダー管理
+  let lastType = null;
+
   paged.forEach(a => {
-    const col = riskColors[a.risk];
+    const col    = riskColors[a.risk];
     const isOpen = openId === a.id;
     const isFood = a.type === "food";
 
+    // グループヘッダー表示（additive→food の切り替わり時）
+    if (a.type !== lastType) {
+      lastType = a.type;
+      const groupCount = isFood ? foodItems.length : addItems.length;
+      const gh = document.createElement("div");
+      gh.className = isFood
+        ? "group-header group-header-food"
+        : "group-header group-header-add";
+      gh.innerHTML = isFood
+        ? `🟤 要注意原材料 <span class="group-count">${groupCount}種</span>`
+        : `🔵 食品添加物 <span class="group-count">${groupCount}種</span>`;
+      list.appendChild(gh);
+    }
+
     const card = document.createElement("div");
     card.className = "card" + (isOpen ? " open" : "") + (isFood ? " is-food" : "");
-
-    const typeTagHtml = isFood
-      ? `<span class="type-tag type-tag-food">🟤 要注意原材料</span>`
-      : `<span class="type-tag type-tag-additive">🔵 食品添加物</span>`;
 
     card.innerHTML = `
       <div class="card-header">
@@ -1137,7 +1178,7 @@ function render() {
           <span class="risk-badge-level">${a.risk}</span>
         </div>
         <div class="card-info">
-          <div class="card-name">${typeTagHtml}${a.name}</div>
+          <div class="card-name">${a.name}</div>
           <div class="card-category">${a.category}</div>
         </div>
         <div class="card-toggle">
@@ -1173,5 +1214,6 @@ function render() {
 
 render();
 </script>
+
 </body>
 </html>
