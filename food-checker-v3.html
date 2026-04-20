@@ -1,7 +1,4 @@
-
-
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -16,179 +13,178 @@
       padding-bottom: 40px;
     }
 
-.header {
-  background: linear-gradient(135deg, #1a3a0a 0%, #2D5016 50%, #4A7C2F 100%);
-  padding: 28px 20px 20px;
-  color: #fff;
-}
-.header-sub { font-size: 10px; letter-spacing: 4px; opacity: 0.6; margin-bottom: 4px; }
-.header-title { font-size: 24px; font-weight: 900; letter-spacing: 1px; }
-.header-desc { font-size: 12px; opacity: 0.75; margin-top: 4px; }
-.risk-summary { display: flex; gap: 8px; margin-top: 14px; }
-.risk-summary-item {
-  background: rgba(255,255,255,0.15);
-  border-radius: 8px; padding: 6px 10px;
-  text-align: center; flex: 1;
-}
-.risk-summary-count { font-size: 18px; font-weight: 800; }
-.risk-summary-label { font-size: 10px; opacity: 0.8; }
+    .header {
+      background: linear-gradient(135deg, #1a3a0a 0%, #2D5016 50%, #4A7C2F 100%);
+      padding: 28px 20px 20px;
+      color: #fff;
+    }
+    .header-sub { font-size: 10px; letter-spacing: 4px; opacity: 0.6; margin-bottom: 4px; }
+    .header-title { font-size: 24px; font-weight: 900; letter-spacing: 1px; }
+    .header-desc { font-size: 12px; opacity: 0.75; margin-top: 4px; }
+    .risk-summary { display: flex; gap: 8px; margin-top: 14px; }
+    .risk-summary-item {
+      background: rgba(255,255,255,0.15);
+      border-radius: 8px; padding: 6px 10px;
+      text-align: center; flex: 1;
+    }
+    .risk-summary-count { font-size: 18px; font-weight: 800; }
+    .risk-summary-label { font-size: 10px; opacity: 0.8; }
 
-.filter-area { padding: 14px 14px 0; }
-#searchInput {
-  width: 100%; padding: 10px 14px;
-  border-radius: 10px; border: 1.5px solid #D0C9BB;
-  font-size: 14px; background: #fff;
-  outline: none; margin-bottom: 10px; font-family: inherit;
-}
-.filter-label { font-size: 11px; color: #888; margin-bottom: 5px; font-weight: 700; }
-.filter-buttons { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
-.filter-btn {
-  padding: 5px 12px; border-radius: 20px;
-  border: 1.5px solid #D0C9BB; background: #fff;
-  color: #666; font-size: 11px; font-weight: 700;
-  cursor: pointer; transition: all 0.15s; font-family: inherit;
-}
-.result-count { font-size: 12px; color: #888; margin-bottom: 8px; font-weight: 600; }
+    .filter-area { padding: 14px 14px 0; }
+    #searchInput {
+      width: 100%; padding: 10px 14px;
+      border-radius: 10px; border: 1.5px solid #D0C9BB;
+      font-size: 14px; background: #fff;
+      outline: none; margin-bottom: 10px; font-family: inherit;
+    }
+    .filter-label { font-size: 11px; color: #888; margin-bottom: 5px; font-weight: 700; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+    .filter-btn {
+      padding: 5px 12px; border-radius: 20px;
+      border: 1.5px solid #D0C9BB; background: #fff;
+      color: #666; font-size: 11px; font-weight: 700;
+      cursor: pointer; transition: all 0.15s; font-family: inherit;
+    }
+    .result-count { font-size: 12px; color: #888; margin-bottom: 8px; font-weight: 600; }
 
-/* 種別フィルター */
-.type-filter { display: flex; gap: 6px; margin-bottom: 10px; }
-.type-btn {
-  flex: 1; padding: 7px 4px; border-radius: 8px;
-  border: 1.5px solid #D0C9BB; background: #fff;
-  font-size: 11px; font-weight: 700; cursor: pointer;
-  font-family: inherit; color: #666; transition: all 0.15s;
-  text-align: center;
-}
-.type-btn.active-all   { background: #4A7C2F; color: #fff; border-color: #4A7C2F; }
-.type-btn.active-add   { background: #3B5998; color: #fff; border-color: #3B5998; }
-.type-btn.active-food  { background: #8B4513; color: #fff; border-color: #8B4513; }
+    /* 種別フィルター */
+    .type-filter { display: flex; gap: 6px; margin-bottom: 10px; }
+    .type-btn {
+      flex: 1; padding: 7px 4px; border-radius: 8px;
+      border: 1.5px solid #D0C9BB; background: #fff;
+      font-size: 11px; font-weight: 700; cursor: pointer;
+      font-family: inherit; color: #666; transition: all 0.15s;
+      text-align: center;
+    }
+    .type-btn.active-all   { background: #4A7C2F; color: #fff; border-color: #4A7C2F; }
+    .type-btn.active-add   { background: #3B5998; color: #fff; border-color: #3B5998; }
+    .type-btn.active-food  { background: #8B4513; color: #fff; border-color: #8B4513; }
 
-.card-list { padding: 0 14px; }
-.card {
-  background: #fff; border-radius: 12px;
-  margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  border: 1.5px solid transparent;
-  cursor: pointer; transition: all 0.2s; overflow: hidden;
-}
-.card.open { box-shadow: 0 4px 16px rgba(0,0,0,0.10); border-color: #4A7C2F; }
-.card-header { padding: 12px 12px 0; display: flex; align-items: center; gap: 10px; }
-.risk-badge {
-  min-width: 38px; height: 38px; border-radius: 8px;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  font-size: 8px; font-weight: 800; line-height: 1.3;
-  color: #fff; flex-shrink: 0;
-}
-.risk-badge-level { font-size: 10px; }
-.card-info { flex: 1; min-width: 0; }
-.card-name { font-weight: 700; font-size: 13px; color: #222; margin-bottom: 2px; line-height: 1.3; }
+    .card-list { padding: 0 14px; }
+    .card {
+      background: #fff; border-radius: 12px;
+      margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      border: 1.5px solid transparent;
+      cursor: pointer; transition: all 0.2s; overflow: hidden;
+    }
+    .card.open { box-shadow: 0 4px 16px rgba(0,0,0,0.10); border-color: #4A7C2F; }
+    .card-header { padding: 12px 12px 0; display: flex; align-items: center; gap: 10px; }
+    .risk-badge {
+      min-width: 38px; height: 38px; border-radius: 8px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      font-size: 8px; font-weight: 800; line-height: 1.3;
+      color: #fff; flex-shrink: 0;
+    }
+    .risk-badge-level { font-size: 10px; }
+    .card-info { flex: 1; min-width: 0; }
+    .card-name { font-weight: 700; font-size: 13px; color: #222; margin-bottom: 2px; line-height: 1.3; }
 
-/* 種別バッジ */
-.type-tag {
-  display: inline-block; font-size: 9px; font-weight: 800;
-  padding: 2px 7px; border-radius: 10px; margin-right: 4px;
-  vertical-align: middle; letter-spacing: 0.5px;
-}
-.type-tag-additive { background: #EBF0FF; color: #3B5998; }
-.type-tag-food     { background: #FFF0E0; color: #8B4513; }
+    /* 種別バッジ */
+    .type-tag {
+      display: inline-block; font-size: 9px; font-weight: 800;
+      padding: 2px 7px; border-radius: 10px; margin-right: 4px;
+      vertical-align: middle; letter-spacing: 0.5px;
+    }
+    .type-tag-additive { background: #EBF0FF; color: #3B5998; }
+    .type-tag-food     { background: #FFF0E0; color: #8B4513; }
 
-.card-category { font-size: 10px; color: #999; margin-top: 1px; }
-/* ① 開閉ボタン */
-.card-toggle {
-  display: flex; align-items: center; gap: 5px;
-  flex-shrink: 0;
-}
-.toggle-btn {
-  background: #F0F4FF; border: 1.5px solid #B8C8F0;
-  color: #3B5998; border-radius: 20px;
-  font-size: 10px; font-weight: 800; padding: 4px 10px;
-  cursor: pointer; font-family: inherit;
-  white-space: nowrap; transition: all 0.15s;
-  display: flex; align-items: center; gap: 4px;
-}
-.card.is-food .toggle-btn {
-  background: #FFF0E0; border-color: #E8B87A; color: #8B4513;
-}
-.card.open .toggle-btn {
-  background: #4A7C2F; border-color: #4A7C2F; color: #fff;
-}
-.toggle-arrow { font-size: 10px; transition: transform 0.2s; }
-.card.open .toggle-arrow { transform: rotate(180deg); }
+    .card-category { font-size: 10px; color: #999; margin-top: 1px; }
+    /* ① 開閉ボタン */
+    .card-toggle {
+      display: flex; align-items: center; gap: 5px;
+      flex-shrink: 0;
+    }
+    .toggle-btn {
+      background: #F0F4FF; border: 1.5px solid #B8C8F0;
+      color: #3B5998; border-radius: 20px;
+      font-size: 10px; font-weight: 800; padding: 4px 10px;
+      cursor: pointer; font-family: inherit;
+      white-space: nowrap; transition: all 0.15s;
+      display: flex; align-items: center; gap: 4px;
+    }
+    .card.is-food .toggle-btn {
+      background: #FFF0E0; border-color: #E8B87A; color: #8B4513;
+    }
+    .card.open .toggle-btn {
+      background: #4A7C2F; border-color: #4A7C2F; color: #fff;
+    }
+    .toggle-arrow { font-size: 10px; transition: transform 0.2s; }
+    .card.open .toggle-arrow { transform: rotate(180deg); }
 
-.card-uses { padding: 8px 12px 10px; }
-.uses-label { font-size: 10px; color: #aaa; margin-bottom: 3px; }
-.uses-content {
-  font-size: 11px; color: #555;
-  background: #F7F4EE; border-radius: 6px;
-  padding: 5px 8px; line-height: 1.5;
-}
+    .card-uses { padding: 8px 12px 10px; }
+    .uses-label { font-size: 10px; color: #aaa; margin-bottom: 3px; }
+    .uses-content {
+      font-size: 11px; color: #555;
+      background: #F7F4EE; border-radius: 6px;
+      padding: 5px 8px; line-height: 1.5;
+    }
 
-/* ② タップ案内バナー */
-.tap-hint {
-  margin: 0 14px 10px;
-  background: #FFFBEA; border: 1.5px solid #F6D860;
-  border-radius: 10px; padding: 9px 12px;
-  font-size: 11px; color: #7A5C00;
-  display: flex; align-items: center; gap: 8px;
-}
-.tap-hint-icon { font-size: 18px; flex-shrink: 0; }
-.card-detail {
-  margin: 0 12px 12px; background: #FFF8F0;
-  border-radius: 8px; padding: 10px 12px; display: none;
-}
-.card.open .card-detail { display: block; }
-.detail-label { font-size: 10px; font-weight: 800; margin-bottom: 5px; }
-.detail-text { font-size: 12px; color: #444; line-height: 1.7; }
+    /* ② タップ案内バナー */
+    .tap-hint {
+      margin: 0 14px 10px;
+      background: #FFFBEA; border: 1.5px solid #F6D860;
+      border-radius: 10px; padding: 9px 12px;
+      font-size: 11px; color: #7A5C00;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .tap-hint-icon { font-size: 18px; flex-shrink: 0; }
+    .card-detail {
+      margin: 0 12px 12px; background: #FFF8F0;
+      border-radius: 8px; padding: 10px 12px; display: none;
+    }
+    .card.open .card-detail { display: block; }
+    .detail-label { font-size: 10px; font-weight: 800; margin-bottom: 5px; }
+    .detail-text { font-size: 12px; color: #444; line-height: 1.7; }
 
-/* 食品原材料カードの左ボーダー色 */
-.card.is-food { border-left: 3px solid #C8813A; }
-.card.is-food.open { border-color: #C8813A; }
+    /* 食品原材料カードの左ボーダー色 */
+    .card.is-food { border-left: 3px solid #C8813A; }
+    .card.is-food.open { border-color: #C8813A; }
 
-.note {
-  margin: 14px 14px 0; padding: 12px 14px;
-  background: #EAF0E5; border-radius: 10px;
-  font-size: 11px; color: #5A7A4A; line-height: 1.6;
-}
+    .note {
+      margin: 14px 14px 0; padding: 12px 14px;
+      background: #EAF0E5; border-radius: 10px;
+      font-size: 11px; color: #5A7A4A; line-height: 1.6;
+    }
 
-/* ④ 出典エリア */
-.sources {
-  margin: 10px 14px 0; padding: 12px 14px;
-  background: #F0F0F0; border-radius: 10px;
-  font-size: 11px; color: #555; line-height: 1.8;
-}
-.sources-title {
-  font-size: 12px; font-weight: 800; color: #333;
-  margin-bottom: 6px;
-}
-.sources a { color: #3B5998; text-decoration: none; }
-.sources a:hover { text-decoration: underline; }
-.no-result { text-align: center; padding: 40px; color: #bbb; font-size: 14px; }
+    /* ④ 出典エリア */
+    .sources {
+      margin: 10px 14px 0; padding: 12px 14px;
+      background: #F0F0F0; border-radius: 10px;
+      font-size: 11px; color: #555; line-height: 1.8;
+    }
+    .sources-title {
+      font-size: 12px; font-weight: 800; color: #333;
+      margin-bottom: 6px;
+    }
+    .sources a { color: #3B5998; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .no-result { text-align: center; padding: 40px; color: #bbb; font-size: 14px; }
 
-/* 凡例 */
-.legend {
-  display: flex; gap: 12px; flex-wrap: wrap;
-  background: #fff; border-radius: 10px; padding: 10px 12px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-}
-.legend-item { display: flex; align-items: flex-start; gap: 7px; font-size: 11px; color: #555; flex: 1; min-width: 130px; }
-.legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; }
+    /* 凡例 */
+    .legend {
+      display: flex; gap: 12px; flex-wrap: wrap;
+      background: #fff; border-radius: 10px; padding: 10px 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .legend-item { display: flex; align-items: flex-start; gap: 7px; font-size: 11px; color: #555; flex: 1; min-width: 130px; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; }
 
-/* グループヘッダー */
-.group-header {
-  display: flex; align-items: center; gap: 10px;
-  padding: 10px 14px 6px;
-  margin: 8px 0 4px;
-  border-radius: 10px;
-  font-size: 13px; font-weight: 800;
-}
-.group-header-add { background: #EBF0FF; color: #3B5998; border-left: 4px solid #3B5998; }
-.group-header-food { background: #FFF0E0; color: #8B4513; border-left: 4px solid #C8813A; }
-.group-count {
-  font-size: 11px; font-weight: 700;
-  padding: 2px 8px; border-radius: 10px;
-  background: rgba(0,0,0,0.08);
-}
-
+    /* グループヘッダー */
+    .group-header {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 14px 6px;
+      margin: 8px 0 4px;
+      border-radius: 10px;
+      font-size: 13px; font-weight: 800;
+    }
+    .group-header-add { background: #EBF0FF; color: #3B5998; border-left: 4px solid #3B5998; }
+    .group-header-food { background: #FFF0E0; color: #8B4513; border-left: 4px solid #C8813A; }
+    .group-count {
+      font-size: 11px; font-weight: 700;
+      padding: 2px 8px; border-radius: 10px;
+      background: rgba(0,0,0,0.08);
+    }
   </style>
 </head>
 <body>
@@ -221,7 +217,6 @@
   <input type="text" id="searchInput" placeholder="🔍 成分名・食品名・カテゴリで検索...">
 
   <!-- ③ 凡例（検索窓直下に移動） -->
-
   <div class="legend" style="margin:0 0 10px 0;">
     <div class="legend-item">
       <div class="legend-dot" style="background:#3B5998"></div>
@@ -240,7 +235,6 @@
   </div>
 
   <!-- 種別フィルター -->
-
   <div class="filter-label">表示する種別</div>
   <div class="type-filter">
     <button class="type-btn active-all" id="typeAll" onclick="setType('all')">すべて</button>
@@ -262,6 +256,8 @@
   <div class="result-count" id="resultCount"></div>
 </div>
 
+
+
 <div class="card-list" id="cardList"></div>
 
 <div class="note">
@@ -269,23 +265,59 @@
 </div>
 
 <!-- ④ 出典 -->
-
 <div class="sources">
   <div class="sources-title">📚 参考・出典</div>
-  <ul style="padding-left:16px;margin:0;">
+
+  <div style="font-size:11px;font-weight:800;color:#444;margin:8px 0 4px;">🇯🇵 日本の公的機関</div>
+  <ul style="padding-left:16px;margin:0 0 10px 0;">
     <li>消費者庁「食品添加物」指定添加物リスト（食品衛生法施行規則別表第1）<br>
       <a href="https://www.caa.go.jp/policies/policy/standards_evaluation/food_additives" target="_blank">https://www.caa.go.jp/…/food_additives</a></li>
     <li>公益財団法人 日本食品化学研究振興財団「指定添加物リスト（476品目）」<br>
       <a href="https://www.ffcr.or.jp/tenka/list/post-11.html" target="_blank">https://www.ffcr.or.jp/…/post-11.html</a></li>
+    <li>厚生労働省「食品添加物に関するQ&A」<br>
+      <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syokuten/qa_jigyosya.html" target="_blank">https://www.mhlw.go.jp/…/syokuten/</a></li>
+    <li>内閣府 食品安全委員会「食品添加物評価書」<br>
+      <a href="https://www.fsc.go.jp/fsciis/evaluationDocument/search" target="_blank">https://www.fsc.go.jp/…/evaluationDocument/</a></li>
+    <li>国立医薬品食品衛生研究所「ADI関連情報データベース」<br>
+      <a href="https://www.nihs.go.jp/hse/food-info/food_add/" target="_blank">https://www.nihs.go.jp/…/food_add/</a></li>
+    <li>国立がん研究センター「発がん性リスク情報」<br>
+      <a href="https://www.ncc.go.jp/" target="_blank">https://www.ncc.go.jp/</a></li>
+    <li>農林水産省「食品添加物に関する情報」<br>
+      <a href="https://www.maff.go.jp/j/syouan/seisaku/risk_analysis/priority/hazard_chem/tenkabutsu.html" target="_blank">https://www.maff.go.jp/…/tenkabutsu.html</a></li>
+  </ul>
+
+  <div style="font-size:11px;font-weight:800;color:#444;margin:8px 0 4px;">🌍 国際機関</div>
+  <ul style="padding-left:16px;margin:0 0 10px 0;">
     <li>WHO / IARC（国際がん研究機関）発がん性分類データ<br>
       <a href="https://www.iarc.who.int/" target="_blank">https://www.iarc.who.int/</a></li>
-    <li>厚生労働省「食品添加物に関するQ&A」</li>
-    <li>国立医薬品食品衛生研究所「ADI関連情報データベース」</li>
-    <li>欧州食品安全機関（EFSA）食品添加物評価データ</li>
-    <li>安部司 著『食品の裏側』（東洋経済新報社）</li>
+    <li>JECFA（FAO/WHO合同食品添加物専門家委員会）安全性評価データ<br>
+      <a href="https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/en/" target="_blank">https://www.fao.org/…/jecfa/</a></li>
+    <li>Codex委員会（国際食品規格委員会）<br>
+      <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank">https://www.fao.org/…/codexalimentarius/</a></li>
+    <li>欧州食品安全機関（EFSA）食品添加物評価データ<br>
+      <a href="https://www.efsa.europa.eu/en/topics/topic/food-additives" target="_blank">https://www.efsa.europa.eu/…/food-additives</a></li>
+    <li>FDA（米国食品医薬品局）「Generally Recognized as Safe (GRAS)」データベース<br>
+      <a href="https://www.fda.gov/food/food-additives-petitions/food-additive-status-list" target="_blank">https://www.fda.gov/…/food-additive-status-list</a></li>
+    <li>Environmental Working Group（EWG）「Food Scores Database」<br>
+      <a href="https://www.ewg.org/foodscores/" target="_blank">https://www.ewg.org/foodscores/</a></li>
   </ul>
-  <div style="margin-top:8px;color:#888;font-size:10px;">
-    ※ 本データは上記資料をもとにFoodScannerが独自に編集・解説したものです。医学的診断や専門的助言の代替にはなりません。
+
+  <div style="font-size:11px;font-weight:800;color:#444;margin:8px 0 4px;">📖 参考文献・専門書</div>
+  <ul style="padding-left:16px;margin:0 0 10px 0;">
+    <li>安部司 著『食品の裏側』（東洋経済新報社）</li>
+    <li>安部司 著『食品の裏側2 実態編』（東洋経済新報社）</li>
+    <li>渡辺雄二 著『食品添加物危険度事典』（三笠書房）</li>
+    <li>渡辺雄二 著『食べてはいけない添加物 食べてもいい添加物』（大和書房）</li>
+    <li>中戸川仁 著『食べるなら、どっち！？』（サンクチュアリ出版）</li>
+    <li>増尾清 著『食べ物の裏側がわかる本』（三笠書房）</li>
+    <li>第10版 食品添加物公定書（消費者庁）</li>
+    <li>食品安全委員会「食品添加物の一日摂取量調査」各年版</li>
+  </ul>
+
+  <div style="margin-top:8px;color:#888;font-size:10px;line-height:1.6;">
+    ※ 本データは上記資料をもとにFoodScannerが独自に編集・解説したものです。<br>
+    ※ リスク評価は研究・規制状況を参考にした情報であり、医学的診断や専門的助言の代替にはなりません。<br>
+    ※ 科学的知見は常に更新されます。最新情報は各公的機関のウェブサイトをご確認ください。
   </div>
 </div>
 
@@ -1212,6 +1244,5 @@ function render() {
 
 render();
 </script>
-
 </body>
 </html>
