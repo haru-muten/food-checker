@@ -18,9 +18,9 @@
       padding: 28px 20px 20px;
       color: #fff;
     }
-    .header-sub { font-size: 10px; letter-spacing: 4px; opacity: 0.6; margin-bottom: 4px; }
+    .header-sub { font-size: 10px; letter-spacing: 4px; color: #fff; margin-bottom: 4px; }
     .header-title { font-size: 24px; font-weight: 900; letter-spacing: 1px; }
-    .header-desc { font-size: 12px; opacity: 0.75; margin-top: 4px; }
+    .header-desc { font-size: 12px; color: #fff; margin-top: 4px; }
     .risk-summary { display: flex; gap: 8px; margin-top: 14px; }
     .risk-summary-item {
       background: rgba(255,255,255,0.15);
@@ -28,7 +28,7 @@
       text-align: center; flex: 1;
     }
     .risk-summary-count { font-size: 18px; font-weight: 800; }
-    .risk-summary-label { font-size: 10px; opacity: 0.8; }
+    .risk-summary-label { font-size: 10px; color: #fff; }
 
     .filter-area { padding: 14px 14px 0; }
     #searchInput {
@@ -37,7 +37,7 @@
       font-size: 14px; background: #fff;
       outline: none; margin-bottom: 10px; font-family: inherit;
     }
-    .filter-label { font-size: 11px; color: #888; margin-bottom: 5px; font-weight: 700; }
+    .filter-label { font-size: 11px; color: #fff; margin-bottom: 5px; font-weight: 700; }
     .filter-buttons { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
     .filter-btn {
       padding: 5px 12px; border-radius: 20px;
@@ -45,7 +45,7 @@
       color: #666; font-size: 11px; font-weight: 700;
       cursor: pointer; transition: all 0.15s; font-family: inherit;
     }
-    .result-count { font-size: 12px; color: #888; margin-bottom: 8px; font-weight: 600; }
+    .result-count { font-size: 12px; color: #fff; margin-bottom: 8px; font-weight: 600; }
 
     /* 種別フィルター */
     .type-filter { display: flex; gap: 6px; margin-bottom: 10px; }
@@ -56,8 +56,8 @@
       font-family: inherit; color: #666; transition: all 0.15s;
       text-align: center;
     }
-    .type-btn.active-all   { background: #4A7C2F; color: #fff; border-color: #4A7C2F; }
-    .type-btn.active-add   { background: #3B5998; color: #fff; border-color: #3B5998; }
+    .type-btn.active-all   { background: #6B8F62; color: #fff; border-color: #fff; }
+    .type-btn.active-add   { background: #6B9BBF; color: #fff; border-color: #6B9BBF; }
     .type-btn.active-food  { background: #8B4513; color: #fff; border-color: #8B4513; }
 
     .card-list { padding: 0 14px; }
@@ -67,7 +67,7 @@
       border: 1.5px solid transparent;
       cursor: pointer; transition: all 0.2s; overflow: hidden;
     }
-    .card.open { box-shadow: 0 4px 16px rgba(0,0,0,0.10); border-color: #4A7C2F; }
+    .card.open { box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-color: #4A7C2F; }
     .card-header { padding: 12px 12px 0; display: flex; align-items: center; gap: 10px; }
     .risk-badge {
       min-width: 38px; height: 38px; border-radius: 8px;
@@ -86,7 +86,7 @@
       padding: 2px 7px; border-radius: 10px; margin-right: 4px;
       vertical-align: middle; letter-spacing: 0.5px;
     }
-    .type-tag-additive { background: #EBF0FF; color: #3B5998; }
+    .type-tag-additive { background: linear-gradient(135deg, #1a3a0a 0%, #2D5016 50%, #4A7C2F 100%); color: #fff; }
     .type-tag-food     { background: #FFF0E0; color: #8B4513; }
 
     .card-category { font-size: 10px; color: #999; margin-top: 1px; }
@@ -96,8 +96,8 @@
       flex-shrink: 0;
     }
     .toggle-btn {
-      background: #F0F4FF; border: 1.5px solid #B8C8F0;
-      color: #3B5998; border-radius: 20px;
+      background: #EAF5E4; border: 1.5px solid #AADDAA;
+      color: #fff; border-radius: 20px;
       font-size: 10px; font-weight: 800; padding: 4px 10px;
       cursor: pointer; font-family: inherit;
       white-space: nowrap; transition: all 0.15s;
@@ -107,7 +107,7 @@
       background: #FFF0E0; border-color: #E8B87A; color: #8B4513;
     }
     .card.open .toggle-btn {
-      background: #4A7C2F; border-color: #4A7C2F; color: #fff;
+      background: #6B8F62; border-color: #fff; color: #fff;
     }
     .toggle-arrow { font-size: 10px; transition: transform 0.2s; }
     .card.open .toggle-arrow { transform: rotate(180deg); }
@@ -143,8 +143,8 @@
 
     .note {
       margin: 14px 14px 0; padding: 12px 14px;
-      background: #EAF0E5; border-radius: 10px;
-      font-size: 11px; color: #5A7A4A; line-height: 1.6;
+      background: linear-gradient(135deg, #1a3a0a 0%, #2D5016 50%, #4A7C2F 100%); border-radius: 10px;
+      font-size: 11px; color: #fff; line-height: 1.6;
     }
 
     /* ④ 出典エリア */
@@ -157,7 +157,7 @@
       font-size: 12px; font-weight: 800; color: #333;
       margin-bottom: 6px;
     }
-    .sources a { color: #3B5998; text-decoration: none; }
+    .sources a { color: #fff; text-decoration: none; }
     .sources a:hover { text-decoration: underline; }
     .no-result { text-align: center; padding: 40px; color: #bbb; font-size: 14px; }
 
@@ -178,7 +178,7 @@
       border-radius: 10px;
       font-size: 13px; font-weight: 800;
     }
-    .group-header-add { background: #EBF0FF; color: #3B5998; border-left: 4px solid #3B5998; }
+    .group-header-add { background: linear-gradient(135deg, #1a3a0a 0%, #2D5016 50%, #4A7C2F 100%); color: #fff; border-left: 4px solid #5B8A4A; }
     .group-header-food { background: #FFF0E0; color: #8B4513; border-left: 4px solid #C8813A; }
     .group-count {
       font-size: 11px; font-weight: 700;
@@ -221,7 +221,7 @@
     <div class="legend-item">
       <div class="legend-dot" style="background:#3B5998"></div>
       <div>
-        <strong style="color:#3B5998">食品添加物</strong><br>
+        <strong style="color:#4A7C2F">食品添加物</strong><br>
         <span style="font-size:10px;color:#666">法律で規定された添加物</span>
       </div>
     </div>
@@ -247,7 +247,7 @@
 
   <div class="filter-label" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;" id="catToggleLabel" onclick="toggleCategoryPanel()">
     <span>カテゴリ</span>
-    <span id="catToggleIcon" style="font-size:12px;background:#4A7C2F;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">閉じる ▲</span>
+    <span id="catToggleIcon" style="font-size:12px;background:#6B8F62;color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;">閉じる ▲</span>
   </div>
   <div id="categoryPanel" style="display:block;">
     <div class="filter-buttons" id="categoryFilters"></div>
@@ -1135,16 +1135,129 @@ function renderPagination(totalItems, container) {
   container.appendChild(wrapper);
 }
 
+// 全角→半角変換（数字・英字・記号）
+function toHalfWidth(str) {
+  return str
+    .replace(/[０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0))
+    .replace(/[Ａ-Ｚａ-ｚ]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0))
+    .replace(/　/g, ' ')
+    .replace(/[（]/g, '(').replace(/[）]/g, ')')
+    .replace(/[・]/g, '・');
+}
+
+// 半角→全角変換（数字のみ）
+function toFullWidth(str) {
+  return str.replace(/[0-9]/g, s => String.fromCharCode(s.charCodeAt(0) + 0xFEE0));
+}
+
+// カテゴリの表記ゆれ対応マップ
+const categoryAliases = {
+  // 「アミノ酸」は削除→専用リストで対応（下記 aminoAcidNames 参照）
+  'うま味': ['調味料（うま味）','調味料'],
+  'msg': ['調味料（うま味）'],
+  'ph調整剤': ['pH調整剤','pH調整剤・結着剤','pH調整剤・保存料','pH調整剤・製造用剤','pH調整剤・調味料','酸味料・pH調整剤','pH調整剤・豆腐凝固剤'],
+  'ph': ['pH調整剤','pH調整剤・結着剤','酸味料・pH調整剤'],
+  '増粘剤': ['増粘剤・安定剤','増粘剤・ゲル化剤','増粘剤・乳化剤'],
+  '着色料': ['着色料','着色料・保存料','発色剤'],
+  '保存料': ['保存料','保存料・漂白剤','保存料・調味料','保存料・着色料'],
+  '甘味料': ['甘味料','甘味料・保湿剤'],
+  '乳化剤': ['乳化剤'],
+  '酸化防止剤': ['酸化防止剤','酸化防止剤・栄養強化剤','酸化防止剤・品質改良剤'],
+  '香料': ['香料'],
+  '膨張剤': ['膨張剤','膨張剤・pH調整剤'],
+  '漂白剤': ['漂白剤','漂白剤・殺菌料','保存料・漂白剤'],
+  '防カビ': ['防カビ剤'],
+  '殺菌': ['殺菌料','漂白剤・殺菌料'],
+  '発色剤': ['発色剤'],
+  '酵素': ['酵素（品質改良）','酵素（製造用）'],
+  '品質改良': ['品質改良剤','酵素（品質改良）'],
+  '栄養強化': ['栄養強化剤','固化防止剤・栄養強化剤'],
+  'ビタミン': ['栄養強化剤','酸化防止剤・栄養強化剤'],
+  'ミネラル': ['栄養強化剤'],
+  '固化防止': ['固化防止剤','固化防止剤・栄養強化剤'],
+  '光沢': ['光沢剤','光沢剤・被膜剤'],
+  'ゲル化': ['増粘剤・ゲル化剤','ゲル化剤','豆腐凝固剤'],
+  '豆腐': ['豆腐凝固剤','pH調整剤・豆腐凝固剤'],
+  '消泡': ['消泡剤'],
+  '酸味': ['酸味料','酸味料・pH調整剤','酸味料・保存料'],
+  'トランス脂肪酸': ['要注意原材料・油脂'],
+  '遺伝子組み換え': ['要注意原材料・遺伝子組み換え'],
+  'gmo': ['要注意原材料・遺伝子組み換え'],
+  '油脂': ['要注意原材料・油脂'],
+  '糖質': ['要注意原材料・糖質'],
+  '砂糖': ['要注意原材料・糖質'],
+  'アレルギー': ['要注意原材料・乳成分','要注意原材料・甲殻類','要注意原材料・グルテン'],
+  'グルテン': ['要注意原材料・グルテン'],
+  '乳成分': ['要注意原材料・乳成分'],
+  'カゼイン': ['要注意原材料・乳成分'],
+};
+
+// 「調味料（アミノ酸等）」一括名表示に含まれる成分リスト
+// 検索で「アミノ酸」「アミノ酸等」と入力した場合にヒットさせる
+const aminoAcidNames = [
+  'グルタミン酸ナトリウム','グルタミン酸Na','MSG',
+  'グルタミン酸カリウム','グルタミン酸カルシウム','グルタミン酸マグネシウ','グルタミン酸アンモニウム',
+  'イノシン酸二ナトリウム','イノシン酸Na','イノシン酸',
+  'グアニル酸二ナトリウム','グアニル酸Na','グアニル酸',
+  'リボヌクレオチドナトリウム','リボヌクレオチドカルシウム','5\'-リボヌクレオチド',
+  'アデニル酸','AMP','シチジル酸','CMP','ウリジル酸','UMP',
+  'コハク酸ナトリウム','コハク酸二ナトリウム','コハク酸一ナトリウム','コハク酸',
+  'アスパラギン酸ナトリウム','アスパラギン酸Na',
+  'アラニン','DL-アラニン','グリシン',
+  'グルタミルバリルグリシン',
+  '調味料','うま味調味料',
+];
+
 function render() {
+  // 検索クエリの正規化（全角→半角、小文字化）
+  const rawSearch = currentSearch;
+  const normSearch = toHalfWidth(rawSearch).toLowerCase();
+  const fullSearch = toFullWidth(rawSearch); // 半角数字→全角でも検索
+
+  // カテゴリ別名リスト取得
+  const aliasCategories = normSearch
+    ? Object.entries(categoryAliases)
+        .filter(([key]) => normSearch.includes(key) || key.includes(normSearch))
+        .flatMap(([, cats]) => cats)
+    : [];
+
   // フィルタリング（カテゴリは分割して照合）
   const filtered = items.filter(a => {
-    const matchType   = currentType === "all" || a.type === currentType;
-    const matchRisk   = currentRisk === "すべて" || a.risk === currentRisk;
-    const matchCat    = currentCat === "すべて" || splitCategories(a).includes(currentCat);
-    const matchSearch = !currentSearch ||
-      a.name.includes(currentSearch) ||
-      a.uses.includes(currentSearch) ||
-      a.category.includes(currentSearch);
+    const matchType = currentType === "all" || a.type === currentType;
+    const matchRisk = currentRisk === "すべて" || a.risk === currentRisk;
+    const matchCat  = currentCat === "すべて" || splitCategories(a).includes(currentCat);
+
+    let matchSearch = true;
+    if (rawSearch) {
+      const nameH  = toHalfWidth(a.name).toLowerCase();
+      const usesH  = toHalfWidth(a.uses).toLowerCase();
+      const catH   = toHalfWidth(a.category).toLowerCase();
+      const detailH = toHalfWidth(a.riskDetail).toLowerCase();
+
+      // 全角・半角両方でマッチ確認
+      const hitName   = nameH.includes(normSearch)   || a.name.includes(rawSearch)   || a.name.includes(fullSearch);
+      const hitUses   = usesH.includes(normSearch)   || a.uses.includes(rawSearch)   || a.uses.includes(fullSearch);
+      const hitCat    = catH.includes(normSearch)    || a.category.includes(rawSearch);
+      const hitDetail = detailH.includes(normSearch) || a.riskDetail.includes(rawSearch);
+      // カテゴリ別名でマッチ
+      const hitAlias  = aliasCategories.length > 0 &&
+        splitCategories(a).some(c => aliasCategories.includes(c));
+
+      // アミノ酸等の専用リストでマッチ
+      const isAminoSearch = normSearch === 'アミノ酸' || normSearch === 'アミノ酸等' || normSearch === 'amino';
+      const hitAmino = isAminoSearch &&
+        aminoAcidNames.some(n => {
+          const nH = toHalfWidth(n).toLowerCase();
+          return toHalfWidth(a.name).toLowerCase().includes(nH) ||
+                 nH.includes(toHalfWidth(a.name).toLowerCase()) ||
+                 toHalfWidth(a.uses).toLowerCase().includes(nH) ||
+                 toHalfWidth(a.category).toLowerCase().includes('うま味') ||
+                 toHalfWidth(a.category).toLowerCase().includes('調味料');
+        });
+
+      matchSearch = hitName || hitUses || hitCat || hitDetail || hitAlias || hitAmino;
+    }
+
     return matchType && matchRisk && matchCat && matchSearch;
   });
 
